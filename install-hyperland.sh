@@ -15,6 +15,11 @@ cd ..
 
 bash ./Status-Bar.sh
 
+mkdir -p ~/.Wallpaper
+cp fierwatchWallpaper.jpg ~/.Wallpaper
+cp hyprpaper.conf .config/hypr/hyprpaper.conf
+cp hyprland.conf .config/hypr/hyprland.conf
+
 #clean up
 rm -fr aquamarine
 rm -fr hyprlang
