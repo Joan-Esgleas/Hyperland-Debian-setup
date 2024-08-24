@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #dependencies
-sudo apt install bluez-alsa-utils libgtk-3-0 libgtk-layer-shell-dev pamixer libsass-dev libpulse-dev
+sudo apt install bluez-alsa-utils libgtk-3-0 libgtk-layer-shell-dev pamixer libsass-dev libpulse-dev libdbusmenu-gtk3-dev
 
 git clone https://github.com/scorpion-26/gBar
 cd gBar
