@@ -13,6 +13,8 @@ cd Hyprland
 make all && sudo make install
 cd ..
 
+bash ./Status-Bar.sh
+
 #clean up
 rm -fr aquamarine
 rm -fr hyprlang
