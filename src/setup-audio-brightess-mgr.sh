@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ./audio-brightness-mgr/
+cd ./src/audio-brightness-mgr
 gcc -o audio-brightness-mgr main.c
 sudo cp audio-brightness-mgr /usr/local/bin/audio-brightness-mgr
 sudo chown root:root /usr/local/bin/audio-brightness-mgr
