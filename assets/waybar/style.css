@@ -1,0 +1,179 @@
+@define-color bgcolor rgba(23, 23, 23, 0.43);
+@define-color textcolor #A1BDCE;
+@define-color bordercolor #888789;
+
+* {  
+    font-family: "JetBrains Mono Nerd Font";
+    /*font-family: "JetBrainsMono Nerd Font";*/
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+window#waybar {
+  background: @bgcolor;
+  /*background: #0F0F17;*/
+  /*  border-radius: 15px; */
+  /*  border: 2px solid #124323; */
+  border: 3px solid @bordercolor;
+  border-radius: 10px
+}
+
+
+
+
+#workspaces{
+  background: rgba(23, 23, 23, 0.0);
+  color: @textcolor;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 9px;
+  transition: 0.2s ease;
+}
+
+#workspaces button {
+  background: rgba(0.0, 0.0, 0.0, 0.0);
+  color: @textcolor;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 9px;
+  transition: 0.2s ease;
+}
+
+#workspaces button.active {
+  color: @textcolor;   
+  transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+  background: none;
+  color: @textcolor;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+
+#window {
+  color:@textcolor;
+  opacity:0.4;
+}
+
+
+
+
+
+#clock{
+  color: @textcolor;
+  font-family: "JetBrains Mono Nerd Font";
+  background: rgba(23, 23, 23, 0.0);
+  opacity: 1;
+  border: none;
+}
+
+#tray {
+  margin: 0px 6px 0px 6px;
+}
+
+#tray menu * {
+  min-height: 16px;
+  font-weight: bold;
+}
+
+#tray menu separator {
+  min-height: 10px;
+  min-width: 10px;
+  margin: 0px 6px 0px 6px;
+}
+
+
+
+#network{
+  color: @textcolor;
+  font-weight: normal;
+  margin: 0px 6px 0px 6px;
+}
+
+
+
+#pulseaudio{
+  font-weight: bold;
+  color: @textcolor;  
+  background: rgba(23, 23, 23, 0.0);
+  opacity: 1;
+  margin: 0px 6px 0px 6px;
+}
+
+#pulseaudio-slider {
+  margin: 0px 6px 0px 6px;
+}
+
+#pulseaudio-slider slider {
+  min-height: 10px;
+  min-width: 10px;
+}
+#pulseaudio-slider trough {
+    min-height: 5px;
+    min-width: 80px;
+    border-radius: 5px;
+    opacity: 0.5;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#pulseaudio-slider highlight {
+    background-color: @textcolor;
+}
+
+#backlight{
+  color: @textcolor;
+  font-weight: bold;
+  opacity: 1;
+  margin: 0px 6px 0px 6px;
+}
+
+#backlight-slider {
+  margin: 0px 6px 0px 6px;
+}
+
+#backlight-slider slider {
+  min-height: 10px;
+  min-width: 10px;
+}
+#backlight-slider trough {
+  min-height: 5px;
+  min-width: 80px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+}
+#backlight-slider highlight {
+  background-color: @textcolor;
+}
+
+#power-profiles-daemon { 
+  color: @textcolor;
+  font-weight: normal;
+  margin: 0px 6px 0px 6px;
+}
+
+#battery{
+  font-weight: normal;
+  color: #a6d189;
+  background:  rgba(0, 0, 0, 0.0);
+  opacity: 1;
+  margin: 0px 6px 0px 6px;
+}
+
+#battery.charging, #battery.plugged {
+  color: #edd08c;
+}
+
+
+#battery.critical:not(.charging) {
+  color: red;
+}
+
+#custom-poweroff {
+  color: #d10845;
+  font-weight: bold;
+  opacity: 1;
+  margin: 0px 6px 0px 6px;
+}
+

@@ -13,6 +13,9 @@ make all && sudo make install
 cd ..
 
 bash ./src/status-bar.sh
+bash ./src/setup-audio-brightess-mgr.sh
+bash ./src/setup-utils.sh
+
 
 mkdir -p ~/.Wallpaper
 mkdir -p ~/.config/hypr/
