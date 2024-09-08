@@ -14,3 +14,4 @@ flatpak install --or-update flathub org.onlyoffice.desktopeditors
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 sudo apt install -y papirus-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
+rm ulauncher*
