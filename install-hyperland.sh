@@ -34,3 +34,4 @@ rm -fr Hyprland
 rm -fr hyprutils
 rm -fr xdg-desktop-portal-hyprland
 rm -fr hyprwayland-scanner
+echo ==============INSTALATION COMPLEATED=================
