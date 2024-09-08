@@ -1,25 +1,24 @@
 #!/usr/bin/env bash
 
-chmod +x *.sh
+chmod +x ./src/*.sh
 
-bash ./dependencies.sh
-bash ./setup-fonts.sh
+bash ./src/dependencies.sh
+bash ./src/setup-fonts.sh
 
-cp ./hyprland.desktop /usr/share/wayland-sessions
+cp ./assets/hyprland/hyprland.desktop /usr/share/wayland-sessions
 
 git clone --recursive https://github.com/hyprwm/Hyprland
 cd Hyprland
-
 make all && sudo make install
 cd ..
 
-bash ./Status-Bar.sh
+bash ./src/status-bar.sh
 
 mkdir -p ~/.Wallpaper
 mkdir -p ~/.config/hypr/
-cp fierwatchWallpaper.jpg ~/.Wallpaper
-cp hyprpaper.conf ~/.config/hypr/hyprpaper.conf
-cp hyprland.conf ~/.config/hypr/hyprland.conf
+cp ./assets/fierwatchWallpaper.jpg ~/.Wallpaper
+cp ./assets/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+cp ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 
 #clean up
 rm -fr aquamarine
