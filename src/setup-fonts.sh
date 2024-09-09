@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/.local/share/fonts
+mkdir -p /usr/local/share/fonts/
 
 cd /tmp
 fonts=( 
@@ -19,7 +19,7 @@ fonts=(
 for font in ${fonts[@]}
 do
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/$font.zip
-	unzip $font.zip -d $HOME/.local/share/fonts/$font/
+	sudo unzip $font.zip -d  /usr/local/share/fonts/$font/
     rm $font.zip
 done
 fc-cache
