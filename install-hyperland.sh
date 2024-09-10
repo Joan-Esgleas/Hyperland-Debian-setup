@@ -4,7 +4,7 @@ chmod +x ./src/*.sh
 
 
 sudo cp /etc/apt/sources.list /etc/apt/sources-bkp.list
-sudo cp./assets/aptsources/sources.list /etc/apt/sources.list
+sudo cp ./assets/aptsources/sources.list /etc/apt/sources.list
 
 sudo apt update
 sudo apt upgrade -y
