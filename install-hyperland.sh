@@ -12,7 +12,6 @@ sudo apt upgrade -y
 bash ./src/dependencies.sh
 bash ./src/setup-fonts.sh
 
-sudo mkdir -p /usr/share/wayland-sessions
 sudo cp --parents ./assets/hyprland/hyprland.desktop /usr/share/wayland-sessions
 
 git clone --recursive https://github.com/hyprwm/Hyprland
