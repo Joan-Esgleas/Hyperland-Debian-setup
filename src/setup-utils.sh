@@ -26,8 +26,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
 
 sudo apt install -y gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo flatpak remote-add --if-not-exists kdeapps https://distribute.kde.org/flatpak-apps-testing/
-flatpak install -y --or-update https://cdn.kde.org/flatpak/xwaylandvideobridge-nightly/org.kde.xwaylandvideobridge.flatpakref
 flatpak install -y --or-update flathub org.onlyoffice.desktopeditors
 
 
