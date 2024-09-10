@@ -4,7 +4,8 @@ sudo apt install -y firefox-esr
 sudo apt install -y nautilus
 
 sudo apt install -y dunst
-cp --parents ./assets/dunst/dunstrc ~/.config/dunst/dunstrc
+mkdir -p ~/.config/dunst
+cp ./assets/dunst/dunstrc ~/.config/dunst/dunstrc
 
 sudo apt install -y alacritty
 git clone https://github.com/Joan-Esgleas/alacritty.git ~/.config/alacritty
