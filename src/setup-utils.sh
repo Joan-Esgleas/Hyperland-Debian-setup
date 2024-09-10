@@ -9,7 +9,7 @@ cp --parents ./assets/dunst/dunstrc ~/.config/dunst/dunstrc
 sudo apt install -y alacritty
 git clone https://github.com/Joan-Esgleas/alacritty.git ~/.config/alacritty
 
-sudo apt install -y neovim ripgrep fd-find npm nodejs
+sudo apt install -y neovim ripgrep fd-find npm nodejs luarocks
 git clone https://github.com/Joan-Esgleas/nvim.git ~/.config/nvim
 
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
