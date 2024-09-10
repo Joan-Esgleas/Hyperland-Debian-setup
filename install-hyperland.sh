@@ -2,6 +2,9 @@
 
 chmod +x ./src/*.sh
 
+sudo apt update
+sudo apt upgrade
+
 bash ./src/dependencies.sh
 bash ./src/setup-fonts.sh
 
