@@ -3,8 +3,8 @@
 chmod +x ./src/*.sh
 
 
-sudo cp /etc/apt/sources.list /etc/apt/sources-bkp.list
-sudo cp ./assets/aptsources/sources.list /etc/apt/sources.list
+sudo cp --parents /etc/apt/sources.list /etc/apt/sources-bkp.list
+sudo cp --parents ./assets/aptsources/sources.list /etc/apt/sources.list
 
 sudo apt update
 sudo apt upgrade -y
@@ -13,7 +13,7 @@ bash ./src/dependencies.sh
 bash ./src/setup-fonts.sh
 
 sudo mkdir -p /usr/share/wayland-sessions
-sudo cp ./assets/hyprland/hyprland.desktop /usr/share/wayland-sessions
+sudo cp --parents ./assets/hyprland/hyprland.desktop /usr/share/wayland-sessions
 
 git clone --recursive https://github.com/hyprwm/Hyprland
 cd Hyprland
@@ -26,11 +26,9 @@ bash ./src/setup-sddm.sh
 bash ./src/setup-utils.sh
 
 
-mkdir -p ~/.Wallpaper
-mkdir -p ~/.config/hypr/
-cp ./assets/fierwatchWallpaper.jpg ~/.Wallpaper
-cp ./assets/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
-cp ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
+cp --parents ./assets/fierwatchWallpaper.jpg ~/.Wallpaper
+cp --parents ./assets/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+cp --parents ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 
 #clean up
 rm -fr aquamarine
