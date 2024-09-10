@@ -15,6 +15,7 @@ cd ..
 
 bash ./src/status-bar.sh
 bash ./src/setup-audio-brightess-mgr.sh
+bash ./src/setup-sddm.sh
 bash ./src/setup-utils.sh
 
 
