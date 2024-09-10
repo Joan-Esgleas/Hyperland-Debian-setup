@@ -15,6 +15,7 @@ git clone https://github.com/Joan-Esgleas/nvim.git ~/.config/nvim
 
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
 sudo apt install -y ./ulauncher*
+cp -r ./assets/ulauncher ~/.config
 rm ulauncher*
 
 sudo apt install -y gnome-software flatpak
