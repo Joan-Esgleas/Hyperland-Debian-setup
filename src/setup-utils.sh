@@ -4,8 +4,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y nautilus
 
 sudo apt install -y dunst
-mkdir -p ~/.config/dunst
-cp ./assets/dunst/dunstrc ~/.config/dunst/dunstrc
+git clone https://github.com/Joan-Esgleas/dunst.git ~/.config/
 
 sudo apt install -y alacritty
 git clone https://github.com/Joan-Esgleas/alacritty.git ~/.config/alacritty
@@ -15,7 +14,7 @@ git clone https://github.com/Joan-Esgleas/nvim.git ~/.config/nvim
 
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
 sudo apt install -y ./ulauncher*
-cp -r ./assets/ulauncher ~/.config
+sudo git clone https://github.com/Joan-Esgleas/ulauncher.git ~/.config/
 rm ulauncher*
 
 sudo apt install -y gnome-software flatpak

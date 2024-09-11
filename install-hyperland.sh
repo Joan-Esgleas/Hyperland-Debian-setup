@@ -9,6 +9,8 @@ sudo cp ./assets/aptsources/sources.list /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade -y
 
+mkdir -p ~/.config/
+
 bash ./src/dependencies.sh
 bash ./src/setup-fonts.sh
 
@@ -24,11 +26,8 @@ bash ./src/setup-audio-brightess-mgr.sh
 bash ./src/setup-sddm.sh
 bash ./src/setup-utils.sh
 
-mkdir -p ~/.Wallpaper
-mkdir -p ~/.config/hypr
-cp ./assets/fierwatchWallpaper.jpg ~/.Wallpaper
-cp ./assets/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
-cp ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
+git clone https://github.com/Joan-Esgleas/Wallpapers.git ~/.config/
+git clone https://github.com/Joan-Esgleas/hypr.git ~/.config/
 
 #clean up
 rm -fr aquamarine
