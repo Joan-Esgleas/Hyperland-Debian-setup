@@ -74,15 +74,12 @@ window#waybar {
 }
 
 #tray menu * {
+  background: #212840;
+  color: @textcolor;
   min-height: 16px;
   font-weight: bold;
 }
 
-#tray menu separator {
-  min-height: 10px;
-  min-width: 10px;
-  margin: 0px 6px 0px 6px;
-}
 
 
 
