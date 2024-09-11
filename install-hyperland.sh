@@ -26,8 +26,8 @@ bash ./src/setup-audio-brightess-mgr.sh
 bash ./src/setup-sddm.sh
 bash ./src/setup-utils.sh
 
-git clone https://github.com/Joan-Esgleas/Wallpapers.git ~/.config/
-git clone https://github.com/Joan-Esgleas/hypr.git ~/.config/
+git clone https://github.com/Joan-Esgleas/Wallpapers.git ~/.config/Wallpapers
+git clone https://github.com/Joan-Esgleas/hypr.git ~/.config/hypr
 
 #clean up
 rm -fr aquamarine
