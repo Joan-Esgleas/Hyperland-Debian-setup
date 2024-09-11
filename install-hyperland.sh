@@ -28,8 +28,7 @@ mkdir -p ~/.Wallpaper
 mkdir -p ~/.config/hypr
 cp ./assets/fierwatchWallpaper.jpg ~/.Wallpaper
 cp ./assets/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
-cp ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.temp
-cp ./assets/hyprland/hyprland.temp ~/.config/hypr/hyprland.conf
+cp ./assets/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 
 #clean up
 rm -fr aquamarine
