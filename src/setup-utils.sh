@@ -12,10 +12,8 @@ git clone https://github.com/Joan-Esgleas/alacritty.git ~/.config/alacritty
 sudo apt install -y neovim ripgrep fd-find npm nodejs luarocks
 git clone https://github.com/Joan-Esgleas/nvim.git ~/.config/nvim
 
-wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
-sudo apt install -y ./ulauncher*
-sudo git clone https://github.com/Joan-Esgleas/ulauncher.git ~/.config/ulauncher
-rm ulauncher*
+sudo apt install -y rofi
+git clone https://github.com/Joan-Esgleas/rofi.git ~/.config/rofi
 
 sudo apt install -y gnome-software flatpak
 
@@ -32,6 +30,6 @@ else
 fi
 git clone https://github.com/Joan-Esgleas/starship-themes.git ~/.config/starship-themes
 
-sudo apt install bat
+sudo apt install -y bat
 cp ~/.bashrc ~/.bashrc.bkp
 cp ./assets/bashrc/.bashrc ~/.bashrc
