@@ -22,5 +22,6 @@ rm -fr Hyprland
 rm -fr hyprutils
 rm -fr xdg-desktop-portal-hyprland
 rm -fr hyprwayland-scanner
+rm -fr hyprcursor
 echo ==============INSTALATION COMPLEATED=================
 sudo reboot
