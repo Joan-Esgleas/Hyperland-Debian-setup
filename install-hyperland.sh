@@ -40,5 +40,9 @@ rm -fr hyprutils
 rm -fr xdg-desktop-portal-hyprland
 rm -fr hyprwayland-scanner
 rm -fr hyprcursor
+
+sudo apt autoremove zutty
+sudo apt autoremove
+sudo reboot
 echo ==============INSTALATION COMPLEATED=================
 sudo reboot
