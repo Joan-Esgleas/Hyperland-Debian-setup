@@ -3,6 +3,10 @@
 sudo apt install -y firefox-esr
 sudo apt install -y nautilus
 
+#screenshot
+sudo apt install -y grim slurp swappy
+git clone https://github.com/Joan-Esgleas/swappy.git ~/.config/swappy
+
 sudo apt install -y dunst
 git clone https://github.com/Joan-Esgleas/dunst.git ~/.config/dunst
 
